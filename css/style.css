@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+html {
+    max-width: 1440px;
+    margin: auto;
+
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat ,no-repeat;
+    background-size: 800px, 1500px;
+    background-position-x: 0vw, 20vw;
+    background-position-y: -2vh, 10vh;
+}
+
+/*PARTE SUPERIOR*/
+.title{
+    font-size: 58px;
+    font-weight: 700;
+
+    color: #502050;
+}
+.subtitle{
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #937b92;
+
+    padding-top: 10px;
+}
+
+.top-card{
+    display: flex;
+    justify-content:space-between;
+
+    height: 25rem;
+    width: 90%;
+    margin: 7rem auto;
+    margin-bottom: 3rem;
+}
+
+.side-card{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: left;
+
+    height: 100%;
+    width: 40%;
+}
+
+.stars {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    
+    background-color: #f7f2f7;  
+    border-radius: 0.4rem;
+
+    height: 70px;
+    width: 95%;
+    margin: 1rem 0;
+}
+
+.stars.sec {
+    margin-left: 2rem;
+}
+
+.stars.terc {
+    margin-left: 4rem;
+}
+
+.side-card img{
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+}
+
+.image-stars{
+    margin: 10px 16px;
+}
+
+.stars span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    color: #502050;
+}
+
+/*PARTE INFERIOR*/
+.bottom-card{
+    display: inline-flex;
+    justify-content: space-between;
+
+    height: 20rem;
+    width:90%;
+    margin: 0 4.5rem;
+}
+
+.profile {
+    background-color: #502050;
+    border-radius: 0.7rem;
+    
+    width: 380px;
+    height: 250px;
+
+    margin: 1rem 1rem;
+    padding: 5px;
+}
+
+.profile.sec{
+    margin-top: 2em;
+}
+
+.profile.terc{
+    margin-top: 3rem;
+}
+
+.profile-owner{
+    display: inline-flex;
+
+    width:80%;
+    margin: 2rem 2.5rem;
+
+    color: #fff;
+    font-weight: 700;
+}
+
+.profile-owner img{
+    text-align: left;
+    border-radius: 5rem;
+
+    height: 55px;
+    width: 55px;
+}
+
+.profile-owner p{
+    margin: auto;
+    width: 60%;
+}
+
+.profile-owner span{
+    display: block;
+    color:#ee68a4;
+    font-weight: 400;
+}
+
+.profile-comment{
+    margin: auto;
+    width: 80%;
+
+    color: #ffffff
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+.attribution a {
+    color: #3e52a3;
+}
+
+@media(max-width: 375px){
+    /*PARTE SUPERIOR*/
+    .title {
+        margin: 2rem 2rem 0;
+        width: 18rem;
+
+        font-size: 30px;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .subtitle {
+        margin: 0.5rem 1rem;
+        width: 20rem;
+
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    .top-card{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+        
+    .stars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            
+        height: 6rem;
+        width: 22rem;
+        margin: 1rem 0.4rem;
+    }
+    
+    .stars.sec {
+        margin-left: 0.4rem;
+    }
+    
+    .stars.terc {
+        margin-left: 0.4rem;
+    }
+    
+    .side-card img{
+        width: 18px;
+        height: 18px;
+        margin: 0.8rem 0.1rem 0;
+    }
+
+    /*PARTE INFERIOR*/
+    .bottom-card{
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+        height: 60rem;
+    }
+    
+    .profile {
+        width: 20rem;
+        height: 20rem;
+    
+        margin: 1rem auto;
+        padding: 0;
+    }
+    
+    .profile.sec{
+        margin-top: 1rem;
+    }
+    
+    .profile.terc{
+        margin-top: 1rem;
+    }
+    
+    .profile-owner img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .attribution {
+        font-size: 15px;
+    }
+    .attribution a {
+        color: #3e52a3;
+    }
+}
